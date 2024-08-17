@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { cn } from '@/lib/utils';
 import "./globals.css";
+import Navbar from "@/components/navbar/Navbar";
 
 const poppins = Poppins({ subsets: ['latin'], variable: '--font-poppins', weight: ["300","400", "500", "600","700","800", "900"]});
 
@@ -18,11 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body  className={cn(
-                    'font-poppins mx-auto antialiased max-w-screen-2xl',
+                    'font-poppins mx-auto antialiased',
                     poppins.variable
                 )}>
-
-                  <main>
+                  <Navbar/>
+                  <main className="px-2">
                   {children}
                   </main>
                 </body>
