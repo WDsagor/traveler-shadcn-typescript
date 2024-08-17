@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 
-const poppins = Poppins({ subsets: ['latin'], variable: '--font-poppins', weight: ["300","400", "500", "600","700","800", "900"]});
+const poppins = Poppins({ subsets: ['latin'], variable: '--font-poppins', weight: ["300", "400", "500", "600", "700", "800", "900"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,15 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body  className={cn(
-                    'font-poppins mx-auto antialiased',
-                    poppins.variable
-                )}>
-                  <Navbar/>
-                  <main className="px-2">
-                  {children}
-                  </main>
-                </body>
+      <body className={cn(
+        'font-poppins mx-auto antialiased',
+        poppins.variable
+      )}>
+        <Navbar />
+        <main className="">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

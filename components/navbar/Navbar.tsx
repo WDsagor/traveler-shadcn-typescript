@@ -57,7 +57,7 @@ const components: { title: string; href: string; }[] = [
 
 const Navbar = () => {
     return (
-        <nav className=''>
+        <nav className=' sticky top-0 text-white'>
             <div className='max-w-screen-2xl mx-auto py-4 px-2 flex justify-between'>
 
                 <Link href={"/"} className='text-4xl font-semibold' >traveler</Link>
@@ -74,15 +74,10 @@ const Navbar = () => {
                             <AvatarFallback>Name</AvatarFallback>
                         </Avatar> ID <FaChevronDown size={15} /></DropdownMenuTrigger>
                         <DropdownMenuContent>
-
-
                             <Link href={"/"}> <DropdownMenuItem className='focus:bg-primary  focus:text-white cursor-pointer'  > Profile</DropdownMenuItem></Link>
                             <Link href={"/"}> <DropdownMenuItem className='focus:bg-primary  focus:text-white cursor-pointer'  > Billing</DropdownMenuItem></Link>
                             <Link href={"/"}> <DropdownMenuItem className=' focus:bg-primary focus:text-white cursor-pointer'  > Team</DropdownMenuItem></Link>
                             <Link href={"/"}> <DropdownMenuItem className=' focus:bg-primary focus:text-white cursor-pointer'  > Logout</DropdownMenuItem></Link>
-
-
-
                         </DropdownMenuContent>
                     </DropdownMenu>
                 </div>
