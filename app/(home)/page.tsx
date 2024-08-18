@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button';
 import { CiSearch } from "react-icons/ci";
 import ExploreArea from './ExploreArea';
 import TravelPoint from './TravelPoint';
+import TopDestination from './TopDestination';
 
 
 const page = () => {
@@ -19,6 +20,7 @@ const page = () => {
     <div>
       <ExploreArea />
       <TravelPoint />
+      <TopDestination />
     </div>
   );
 };
