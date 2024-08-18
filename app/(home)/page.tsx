@@ -11,12 +11,14 @@ import { IoLocationSharp } from "react-icons/io5";
 import { Button } from '@/components/ui/button';
 import { CiSearch } from "react-icons/ci";
 import ExploreArea from './ExploreArea';
+import TravelPoint from './TravelPoint';
 
 
 const page = () => {
   return (
     <div>
       <ExploreArea />
+      <TravelPoint />
     </div>
   );
 };
