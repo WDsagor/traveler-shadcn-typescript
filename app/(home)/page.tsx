@@ -13,6 +13,7 @@ import { CiSearch } from "react-icons/ci";
 import ExploreArea from './ExploreArea';
 import TravelPoint from './TravelPoint';
 import TopDestination from './TopDestination';
+import Testimonial from './Testimonial';
 
 
 const page = () => {
@@ -21,6 +22,7 @@ const page = () => {
       <ExploreArea />
       <TravelPoint />
       <TopDestination />
+      <Testimonial />
     </div>
   );
 };

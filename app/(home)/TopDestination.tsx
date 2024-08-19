@@ -63,7 +63,6 @@ const TopDestination = () => {
                     )
                 }
             </div>
-
         </div>
     );
 };

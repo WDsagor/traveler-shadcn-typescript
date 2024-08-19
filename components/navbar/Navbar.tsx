@@ -57,7 +57,7 @@ const components: { title: string; href: string; }[] = [
 
 const Navbar = () => {
     return (
-        <nav className=' sticky top-0 text-white'>
+        <nav className=' sticky top-0 text-white bg-black bg-opacity-30'>
             <div className='max-w-screen-2xl mx-auto py-4 px-2 flex justify-between'>
 
                 <Link href={"/"} className='text-4xl font-semibold' >traveler</Link>
