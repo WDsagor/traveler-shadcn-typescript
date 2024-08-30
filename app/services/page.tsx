@@ -4,6 +4,7 @@ import React from 'react';
 import InfoSection from './InfoSection';
 import ServicePlace from './ServicePlace';
 import Facilities from './Facilities';
+import Benefit from './Benefit';
 const pageTitleInfo: pageTitle = {
     pageTitle: "Services", imgUrl: "/images/services.png"
 }
@@ -18,6 +19,7 @@ const page = () => {
                 <ServicePlace />
             </div>
             <Facilities />
+            <Benefit />
         </section>
     );
 };

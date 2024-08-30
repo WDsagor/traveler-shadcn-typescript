@@ -11,6 +11,7 @@ export type testimonialDatatypes = { name: string; userImg: string; description:
 export type pageTitle = { pageTitle: string; imgUrl: string; }
 
 export type serviceInfo = { icon: ReactNode, title:String, description: string; }
+export type benefitsType = { imgUrl: String, title:String, description: string; }
 
 
 
@@ -36,4 +37,7 @@ export interface pageHeaderInfo {
 
 export interface serviceDataInfo {
   info: serviceInfo,
+  }
+export interface benefitDataInfo {
+  benefit: benefitsType,
   }
