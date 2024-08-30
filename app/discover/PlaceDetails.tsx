@@ -1,8 +1,47 @@
 import TuristCard from '@/components/share/TuristCard';
 import { Button } from '@/components/ui/button';
+import { placeDatatypes } from '@/lib/type';
 import Image from 'next/image';
 import React from 'react';
 import { MdLocationPin } from "react-icons/md";
+
+
+const paceData: placeDatatypes[] = [{
+
+    place: "Taman Nasional Komodo",
+    title: "Wakatobi beach is a paradise for coral reets in indonesia",
+    img: "/images/card-1.png",
+
+
+},
+{
+    place: "Taman Nasional Bunaken",
+    title: "Taman Nasional Bunaken",
+    img: "/images/card-2.png",
+
+
+},
+{
+    place: "Raja Ampat, Papua Barat",
+    title: "Raja Ampat, Papua Barat",
+    img: "/images/card-3.png",
+
+
+},
+// {
+//     place: "Kepulauan Wakatobi",
+//     title: "Kepulauan Wakatobi",
+//     img: "/images/card-4.png",
+
+
+// },
+{
+    place: "Gili Trawangan, Lombok",
+    title: "Gili Trawangan, Lombok",
+    img: "/images/card-5.png",
+
+
+},]
 
 const PlaceDetails = () => {
     return (
@@ -22,9 +61,9 @@ const PlaceDetails = () => {
             <div className='basis-1/3'>
                 <h1 className=' text-3xl flex justify-between items-center'><span>Other Destinations</span> <span ><Button className='text-2xl hover:no-underline' variant={'link'} size='lg'> See all</Button></span></h1>
 
-                <div className='py-5 grid gap-10'>
-                    {[1, 2, 3, 4].map((n, i) => {
-                        return <TuristCard key={i} />
+                <div className='pt-5 pb-10 grid gap-10'>
+                    {paceData.map((place, i) => {
+                        return <TuristCard key={i} place={place} />
                     })}
                 </div>
             </div>
