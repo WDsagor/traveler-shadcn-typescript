@@ -2,6 +2,8 @@ import PageBaner from '@/components/share/PageBaner';
 import { pageTitle } from '@/lib/type';
 import React from 'react';
 import WhyChose from './WhyChose';
+import About from './About';
+import OurTeam from './OurTeam';
 const pageTitleInfo: pageTitle = {
     pageTitle: "About Us", imgUrl: "/images/about-us.png"
 }
@@ -16,6 +18,8 @@ const page = () => {
                 <h1 className='text-4xl font-bold text-center '>Why Choose Us ?</h1>
                 <p className='text-center py-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
                 <WhyChose />
+                <About />
+                <OurTeam />
             </div>
 
         </section>
