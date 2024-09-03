@@ -11,7 +11,8 @@ export type testimonialDatatypes = { name: string; userImg: string; description:
 export type pageTitle = { pageTitle: string; imgUrl: string; }
 
 export type serviceInfo = { icon: ReactNode, title:String, description: string; }
-export type benefitsType = { imgUrl: String, title:String, description: string; }
+export type benefitsType = { imgUrl: string, title:String, description: string; }
+export type neswsDataType = { imgUrl: string, newsTitle:string, publishDate: string; }
 
 
 
@@ -40,4 +41,7 @@ export interface serviceDataInfo {
   }
 export interface benefitDataInfo {
   benefit: benefitsType,
+  }
+export interface neswsData {
+  news: neswsDataType,
   }
