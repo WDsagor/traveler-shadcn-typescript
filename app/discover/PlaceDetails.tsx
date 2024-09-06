@@ -6,42 +6,47 @@ import React from 'react';
 import { MdLocationPin } from "react-icons/md";
 
 
-const paceData: placeDatatypes[] = [{
-
-    place: "Taman Nasional Komodo",
-    title: "Wakatobi beach is a paradise for coral reets in indonesia",
-    img: "/images/card-1.png",
-
-
-},
-{
-    place: "Taman Nasional Bunaken",
-    title: "Taman Nasional Bunaken",
-    img: "/images/card-2.png",
+const placeData: placeDatatypes[] = [
+    {
+        place: "Taman Nasional Komodo",
+        title: "Wakatobi beach is a paradise for coral reets in indonesia",
+        img: "/images/card-1.png",
+        date: ""
 
 
-},
-{
-    place: "Raja Ampat, Papua Barat",
-    title: "Raja Ampat, Papua Barat",
-    img: "/images/card-3.png",
+    },
+    {
+        place: "Taman Nasional Bunaken",
+        title: "Taman Nasional Bunaken",
+        img: "/images/card-2.png",
+        date: ""
 
 
-},
-// {
-//     place: "Kepulauan Wakatobi",
-//     title: "Kepulauan Wakatobi",
-//     img: "/images/card-4.png",
+    },
+    {
+        place: "Raja Ampat, Papua Barat",
+        title: "Raja Ampat, Papua Barat",
+        img: "/images/card-3.png",
+        date: ""
 
 
-// },
-{
-    place: "Gili Trawangan, Lombok",
-    title: "Gili Trawangan, Lombok",
-    img: "/images/card-5.png",
+    },
+    {
+        place: "Kepulauan Wakatobi",
+        title: "Kepulauan Wakatobi",
+        img: "/images/card-4.png",
+        date: ""
 
 
-},]
+    },
+    {
+        place: "Gili Trawangan, Lombok",
+        title: "Gili Trawangan, Lombok",
+        img: "/images/card-5.png",
+        date: ""
+
+
+    },]
 
 const PlaceDetails = () => {
     return (
@@ -62,7 +67,7 @@ const PlaceDetails = () => {
                 <h1 className=' text-3xl flex justify-between items-center'><span>Other Destinations</span> <span ><Button className='text-2xl hover:no-underline' variant={'link'} size='lg'> See all</Button></span></h1>
 
                 <div className='pt-5 pb-10 grid gap-10'>
-                    {paceData.map((place, i) => {
+                    {placeData.map((place, i) => {
                         return <TuristCard key={i} place={place} />
                     })}
                 </div>
