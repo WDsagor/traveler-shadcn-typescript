@@ -14,6 +14,7 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { FaChevronDown } from "react-icons/fa";
+import { usePathname } from 'next/navigation';
 
 
 export const menuItems: { menuName: string, url: string }[] = [{
@@ -56,14 +57,16 @@ const components: { title: string; href: string; }[] = [
 ]
 
 const Navbar = () => {
+    const pathName= usePathname()
+    console.log(pathName)
     return (
-        <nav className=' sticky top-0 text-white bg-black bg-opacity-30'>
+        <nav className={` sticky top-0 ${pathName==='/'?"text-white bg-black bg-opacity-30":"text-black bg-white"}`}>
             <div className='max-w-screen-2xl mx-auto py-4 px-2 flex justify-between'>
 
                 <Link href={"/"} className='text-4xl font-semibold' >traveler</Link>
                 <div className=' flex gap-5 items-center'>
                     {menuItems.map(({ menuName, url }, index) =>
-                        <Link className='py-2 px-4 ' href={url} key={index}>{menuName}</Link>
+                        <Link className={`py-2 px-4 ${pathName=== url? "text-green-500 font-bold":"hover:text-green-500"}`} href={url} key={index}>{menuName}</Link>
                     )}
                 </div>
 
